@@ -91,5 +91,6 @@ public class PlaylistTests extends BaseTest {
     public void assertError(Error responseErr, StatusCode statusCode){
         assertThat(responseErr.getError().getStatus(), equalTo(statusCode.code));
         assertThat(responseErr.getError().getMessage(), equalTo(statusCode.msg));
+        System.out.println("Hello World");
     }
 }
